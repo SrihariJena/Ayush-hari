@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="/images/logo1.png" alt="AGSP Logo">
+                <div class="text-content">
+                    <span class="text-1">AGSP</span>
+                    <span class="text-2">COMPUTER CENTER</span>
+                </div>
+            </div>
+            <div class="center-part">
+                <ul>
+                    <li><a href="/landing-page/index.html">Home</a></li>
+                    <li><a href="index.html" style="color: rgb(182, 113, 113);">E-library</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="lef-part">
+                <div>Log-In</div>
+                <div>Sign-Up</div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>HTML Tutorial</h2>
+            <ul>
+                <li><a href="/HTML-tutorial/index.html">HTML Introduction</a></li>
+                <li><a href="/HTML-tutorial/history.html">HTML- History</a></li>
+                <li style="background-color: lightgreen;"><a href="/HTML-tutorial/bsic.html">HTML Basic</a></li>
+                <li><a href="heading.html">HTML Heading</a></li>
+                <li><a href="#attributes">HTML Attributes</a></li>
+                <li><a href="#headings">HTML Headings</a></li>
+                <li><a href="#paragraphs">HTML Paragraphs</a></li>
+                <li><a href="#styles">HTML Styles</a></li>
+            </ul>
+
+        </aside>
+
+        <main class="content">
+            <section id="Basic">
+                <div class="guide">
+                    <h2>How to create 1st Web page:</h2>
+                    <p>To create 1st webpage follow the steps:</p>
+                    <ol>
+                        <li>Open Notepad.</li>
+                        <li>Write a HTML Code as</li>
+                    </ol>
+                </div>
+                <div class="code-snippet">
+                    <code>
+                    <span style="color:#555;">&lt;</span><span style="color: blue;">!DOCTYPE <span style="color: red;">html</span></span><span style="color:#555;">&gt;</span>
+                    <span style="color: #555;">&lt;</span><span style="color:blue;">html</span><span style="color:#555;">&gt;</span>
+                    <span style="color: #555;">&lt;</span><span style="color:blue;">head</span><span style="color:#555;">&gt;</span><span style="color: #555;">&lt;</span><span style="color:blue;">/head</span><span style="color:#555;">&gt;</span>
+                    <span style="color: #555;">&lt;</span><span style="color:blue;">body</span><span style="color:#555;">&gt;</span>
+                          Hello World!
+                    <span style="color: #555;">&lt;</span><span style="color:blue;">/body</span><span style="color:#555;">&gt;</span>
+                    <span style="color: #555;">&lt;</span><span style="color:blue;">/html</span><span style="color:#555;">&gt;</span>
+                    </code>
+                </div>
+                <div class="guide">
+                    <ol start="3">
+                        <li>Save the file on the computer with extension .html or .htm.</li>
+                        <li>Open the saved file in browser(chrome) and double click or right click and open with the
+                            browser. <br>
+                            The output will be shown as:</li>
+                    </ol>
+                </div>
+                <div class="output">
+                    <div class="inner-out"> Hello World!</div>
+                </div>
+
+                <div class="Tags">
+                    <h2>HTML tags:</h2>
+                    <p>This tags are like keywords which defines that how web browser will format and display the
+                        content with the
+                        help
+                        of tags. A web browser can distinguish between an HTML content and a simple content. HTML tags
+                        contain three
+                        parts:</p>
+                    <li>Opening tags</li>
+                    <li>Closing tag</li>
+                    <li>But Some HTML tags are unclosed tags. ex: <tagname> content...</content>
+                </div>
+                <div class="Document">
+                    <h2>HTML Document:</h2>
+                    <p>An HTML Documents must starts with a document type declaration <!Doctpe HTML> and ends with
+                            &lt;/html&gt;.
+                    </p>
+                    <div class="code-snippet">
+                        <code>
+                        <span style="color:#555;">&lt;</span><span style="color: blue;">!DOCTYPE <span style="color: red;">html</span></span><span style="color:#555;">&gt;</span>
+                        <span style="color: #555;">&lt;</span><span style="color:blue;">html</span><span style="color:#555;">&gt;</span>
+                        <span style="color: #555;">&lt;</span><span style="color:blue;">head</span>
+                        <span style="color: #555;">&lt;</span><span style="color:green;">!--</span> <span style="color:green"> content </span><span style="color:green;">--</span><span style="color:#555;">&gt;</span>   
+                        <span style="color: #555;">&lt;</span><span style="color:blue;">/head</span><span style="color:#555;">&gt;</span>
+                        <span style="color: #555;">&lt;</span><span style="color:blue;">body</span><span style="color:#555;">&gt;</span>
+                        <span style="color: #555;">&lt;</span><span style="color:green;">!--</span> <span style="color:green"> content </span><span style="color:green;">--</span><span style="color:#555;">&gt;</span>   
+                        <span style="color: #555;">&lt;</span><span style="color:blue;">/body</span><span style="color:#555;">&gt;</span>
+                        <span style="color: #555;">&lt;</span><span style="color:blue;">/html</span><span style="color:#555;">&gt;</span>
+                        </code>
+                    </div>
+                    <p>The visible part of the document is between &lt;body&gt; and &lt;/body&gt;.</p>
+                </div>
+
+                <div class="description">
+                    <h2>HTML Description:</h2>
+                    <ul>
+                        <li>The &lt;html&gt; element is the root element of html page.</li>
+                        <li>The &lt;head&gt;element contains meta information about the html page.</li>
+                        <li>The &lt;</span>title&gt; element specifies a title for the html page, which is shown in the
+                            browser's title bar or in the page tab.</li>
+                        <li>&lt;body&gt;element defines the document body and is a container for all the visible
+                            contents such as heading, paragraphs, images, hyperlinks, tables, lists, etc. </li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="btn">
+                <button class="prev-button"><a href="history.html">
+                        < Prev </a> </button>
+                <button class="next-button"><a href="./heading.html">Next ></a></button>
+            </div>
+        </main>
+</body>
+
+</html>
