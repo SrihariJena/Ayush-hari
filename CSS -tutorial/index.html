@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS -tutorial</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="/images/logo1.png" alt="AGSP Logo">
+                <div class="text-content">
+                    <span class="text-1">AGSP</span>
+                    <span class="text-2">COMPUTER CENTER</span>
+                </div>
+            </div>
+            <div class="center-part">
+                <ul>
+                    <li><a href="../landing-page/index.html">Home</a></li>
+                    <li><a href="./index.html" style="color: rgb(182, 113, 113);">E-library</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="lef-part">
+                <div>Log-In</div>
+                <div>Sign-Up</div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>CSS Tutorial</h2>
+            <ul>
+                <li style="background-color: lightgreen;"><a href="./index.html">CSS Introduction</a></li>
+                <li><a href="./selector.html">CSS Selctors</a></li>
+                <li><a href="./aboutcss.html">CSS in Html</a></li>
+                <li><a href="./color.html">CSS Colors</a></li>
+                <li><a href="#attributes">HTML Attributes</a></li>
+                <li><a href="#headings">HTML Headings</a></li>
+                <li><a href="#paragraphs">HTML Paragraphs</a></li>
+                <li><a href="#styles">HTML Styles</a></li>
+            </ul>
+
+        </aside>
+
+        <main class="content">
+            <section id="introduction">
+                <div class="css-intro">
+                    <h1>CSS Introduction</h1>
+                    <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the look &
+                        presentation of a document written in HTML or XML. It defines how elements are
+                        displayed on a web page. CSS makes websites visually appealing and user-friendly.
+                    </p>
+                    <p>
+                        Once you have learned how to write a CSS rule, learning CSS mostly involves learning the
+                        different properties you can use. So this chapter will:
+                    </p>
+                    <ol>
+                        <li>Introduce you to how CSS works</li>
+                        <li>Teach you how to write CSS rules</li>
+                        <li>Show you how CSS rules apply to HTML pages</li>
+                    </ol>
+                    <p>
+                        The remaining chapters in this section will look at all of the
+                        various CSS properties you can use
+                    </p>
+
+                </div>
+                <div class="history">
+                    <h2>History of css</h2>
+                    <p>the history of CSS is marked by significant advancements that have transformed web
+                        design. From its inception as a simple styling language to its current status as a powerful tool
+                        for creating complex and responsive layouts, CSS has been instrumental in shaping the web. As
+                        technology continues to evolve, CSS will undoubtedly play a vital role in the future of web
+                        development.</p>
+                    <ul>
+                        <li>CSS was created by a group of individuals known as the World Wide Web Consortium
+                            (W3C).</li>
+                        <li>Primary contributors include Håkon Wium Lie and Bert Bos.</li>
+                        <li>CSS standards and specifications are maintained by the W3C.</li>
+                        <li>Now, With the advent of responsive web design, CSS has become more powerful and versatile.
+                            Features like Flexbox, Grid, and Media Queries enable developers to create websites that
+                            adapt seamlessly to different screen sizes and devices</li>
+
+                    </ul>
+                </div>
+
+                <div class="rule">
+                    <h2>CSS Rule Structure</h2>
+                    <p>CSS works by associating rules with HTML elements. These rules govern
+                        how the content of specified elements should be displayed. A CSS rule
+                        contains two parts: a selector and a declaration.</p>
+                    <p>Declarations are used to define the style properties for the selected elements.
+                        CSS declarations sit inside curly brackets and each is made up of two
+                        parts: a property and a value, separated by a colon. You can specify
+                        several properties in one declaration, each separated by a semi-colon
+                    </p>
+
+
+                    <div class="code-snippet">
+                        <span>/*
+                            selector {
+                            property: value;
+                            /* More properties and values */
+                            }
+                            */
+                            h1{
+                            <span style="color: blue;">color:</span> <span style="color: red;">red;</span>
+                            <span style="color: blue;">font-size: </span>32px;
+                            }
+                        </span>
+                    </div>
+                    <p>This rule indicates that all &lt;h1&gt;
+                        elements should be shown in the red and font-size 32px </p>
+                    <p>Selectors indicate which
+                        element the rule applies to.
+                        The same rule can apply to
+                        more than one element if you
+                        separate the element names
+                        with commas</p>
+                    <p>Declarations indicate how
+                        the elements referred to in
+                        the selector should be styled.
+                        Declarations are split into two
+                        parts (a property and a value),
+                        and are separated by a colon</p>
+                </div>
+
+                <div class="btn">
+                    <button class="prev-button"><a href="../E-library/index.html">Home </a> </button>
+                    <button class="next-button"><a href="./selector.html">Next ></a></button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
