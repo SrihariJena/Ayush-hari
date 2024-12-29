@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Properties</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../images/logo1.png" alt="AGSP Logo">
+                <div class="text-content">
+                    <span class="text-1">AGSP</span>
+                    <span class="text-2">COMPUTER CENTER</span>
+                </div>
+            </div>
+            <div class="center-part">
+                <ul>
+                    <li><a href="../landing-page/index.html">Home</a></li>
+                    <li><a href="./index.html" style="color: rgb(182, 113, 113);">E-library</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="lef-part">
+                <div>Log-In</div>
+                <div>Sign-Up</div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>CSS Tutorial</h2>
+            <ul>
+                <li><a href="./index.html">CSS Introduction</a></li>
+                <li><a href="./selector.html">CSS Selectors</a></li>
+                <li><a href="./aboutcss.html">CSS in Html</a></li>
+                <li><a href="./color.html">CSS Colors</a></li>
+                <li style="background-color: lightgreen;"><a href="./background.html">CSS Background</a></li>
+                <li><a href="./font.html">CSS Fonts</a></li>
+                <li><a href="./text.html">CSS Text</a></li>
+                <li><a href="./units.html">CSS Units</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+                <li><a href=",/">CSS Styles</a></li>
+
+            </ul>
+        </aside>
+
+        <main class="content">
+            <section>
+                <h1>CSS Background Properties</h1>
+                <p>CSS provides several properties to control the background of an element. Here are all the background
+                    properties with examples:</p>
+                <h2>1. Background Color</h2>
+                <p>You can specify your choice of background color in the same three ways you can specify foreground
+                    colors: RGB values, hex codes, and color names (covered on the next page). <br> If you do not
+                    specify a background color, then the background is transparent. </p>
+                <p>Sets the background color of an element.</p>
+                <p>By default, most browser
+                    windows have a white
+                    background, but browser users
+                    can set a background color for
+                    their windows, so if you want
+                    to be sure that the background
+                    is white you can use the
+                    background-color property on
+                    the <code style="font-weight: bold;">&lt;body&gt;</code> element.
+                </p>
+
+                <div class="example-box">
+                    <h2>Example</h2>
+                    <div class="code-snippet">
+                        <code>
+                                body { <br>
+                                   background-color: rgb(200,200,200); <br>
+                                } <br>
+                                h1 { <br>
+                                   background-color: DarkCyan; <br>
+                                } <br>
+                                h2 { <br>
+                                   background-color: #ee3e80; <br>
+                                } <br>
+                                p { <br>
+                                   background-color: white; <br>
+                                } <br>
+                        </code>
+                    </div>
+                </div>
+
+                <div class="background-img">
+                    <h2>2. Background Image</h2>
+                    <p>To set a background image in CSS, you can use the background-image property. Here's how you can
+                        specify it in detail:.</p>
+                    <div class="example-box">
+                        <div class="code-snippet">
+                            <code>
+                            selector { <br>
+                             background-image: url('path-to-image'); <br>
+                             background-repeat: repeat | no-repeat | repeat-x | repeat-y; <br>
+                             background-size: auto | cover | contain | &lt;width&gt; &lt;height&gt; <br>
+                             background-position: left top | center | right bottom | <x> <y>; <br>
+                             background-attachment: scroll | fixed | local; <br>
+                            } <br>
+                        </code>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>background-image
+                            <p>Defines the URL of the image:</p>
+                            <div class="example-box">
+                                <div class="code-snippet">
+                                    <code>
+                                        background-image: url('images/example.jpg');
+                                    </code>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            background-repeat
+                            <p>Controls whether the background image is repeated:</p>
+                            <ol>
+                                <li>repeat: Repeats the image both horizontally and vertically (default).</li>
+                                <li>no-repeat: Does not repeat the image.
+                                <li>repeat-x: Repeats the image horizontally only.</li>
+                                <li> repeat-y: Repeats the image vertically only.</li>
+                        </li>
+                        </ol>
+                        <div class="example-box">
+                            <div class="code-snippet">
+                                <code>
+                                    background-repeat: no-repeat;
+                                </code>
+                            </div>
+                        </div>
+                        </li>
+                        <li>
+                            <h2>background-size</h2>
+                            <p>Sets the size of the image: </p>
+                            <ol>
+                                <li> auto: Default size.</li>
+                                <li>cover: Scales the image to cover the entire element.</li>
+                                <li>contain: Scales the image to fit within the element.</li>
+                                <li>Custom sizes (e.g., 50% 50% or 100px 200px).</li>
+                            </ol>
+                            <div class="example-box">
+                                <div class="code-snippet">
+                                    <code>
+                                        background-size: cover;
+                                    </code>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>background-position</h2>
+                            <p>Positions the image within the element:</p>
+                            <ol>
+                                <li>Predefined values: top, center, bottom, left, right.</li>
+                                <li>Custom coordinates: 50px 100px or 50% 50%.</li>
+                            </ol>
+                            <div class="example-box">
+                                <div class="code-snippet">
+                                    <code>
+                                    background-attachment: fixed;
+                                </code>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="example-box">
+                    <h2>Practical Example:</h2> <br>
+                    <div class="code-snippet">
+                        <code>
+                            &lt;html lang="en"&gt; <br>
+                            &lt;head&gt; <br>
+                              &lt;meta charset="UTF-8"&gt; <br>
+                              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br>
+                              &lt;title>Background Image Example&lt;/title&gt; <br>
+                              &lt;style&gt; <br>
+                                  body { <br>
+                                      background-image: url('images/background.jpg'); <br>
+                                background-repeat: no-repeat;
+                                      background-size: cover; <br>
+                                background-position: center; <br>
+                                      background-attachment: fixed; <br>
+                                  } <br>
+                              &lt;/style&gt; <br>
+                               &lt;/head&gt; <br>
+                               &lt;body&gt; <br>
+                                   &lt;h1&gt;Welcome to My Website&lt;/h1&gt; <br>
+                                   &lt;p&gt;This is a sample webpage with a background image.&lt;/p&gt; <br>
+                               &lt;/body&gt; <br>
+                               &lt;/html&gt; <br>
+                            </code>
+                    </div>
+                </div>
+            </section>
+             
+            <div class="btn">
+                <button class="prev-button"><a href="./color.html"> &lt; prev </a> </button>
+                <button class="next-button"><a href="./font.html">Next ></a></button>
+            </div>
+            
+        </main>
+    </div>
+</body>
+
+</html>

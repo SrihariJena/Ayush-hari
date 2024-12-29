@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Properties in CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../images/logo1.png" alt="AGSP Logo">
+                <div class="text-content">
+                    <span class="text-1">AGSP</span>
+                    <span class="text-2">COMPUTER CENTER</span>
+                </div>
+            </div>
+            <div class="center-part">
+                <ul>
+                    <li><a href="../landing-page/index.html">Home</a></li>
+                    <li><a href="./index.html" style="color: rgb(182, 113, 113);">E-library</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="lef-part">
+                <div>Log-In</div>
+                <div>Sign-Up</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>CSS Tutorial</h2>
+            <ul>
+                <li><a href="./index.html">CSS Introduction</a></li>
+                <li><a href="./selector.html">CSS Selectors</a></li>
+                <li><a href="./aboutcss.html">CSS in Html</a></li>
+                <li><a href="./color.html">CSS Colors</a></li>
+                <li><a href="./background.html">CSS Background</a></li>
+                <li><a href="./font.html">CSS Fonts</a></li>
+                <li style="background-color: lightgreen;"><a href="./text.html">CSS Text</a></li>
+                <li><a href="./units.html">CSS Units</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <section>
+                <h1>Text Properties in CSS</h1>
+            </section>
+
+            <section>
+                <h2>text-align</h2>
+                <p>Specifies the horizontal alignment of text. <br>
+                    Values: left, right, center, justify</p>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            text-align: center; 
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>text-decoration</h2>
+                <p>Specifies the decoration added to text. <br>
+                Values: none, underline, overline, line-through</p>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            text-decoration: underline; 
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>text-transform</h2>
+                <p>Controls the capitalization of text. <br>
+                Values: none, capitalize, uppercase, lowercase</p>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            css: 
+                            text-transform: uppercase; 
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>text-indent</h2>
+                <p>Specifies the indentation of the first line in a text block. <br>
+                    Any length value like 20px, 10%, 5em</p>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            text-indent: 50px; 
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>letter-spacing</h2>
+                <p>Sets the spacing between characters. <br>
+                    Any length value like 2px, 0.1em, -1px</p>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            css: 
+                            letter-spacing: 2px; 
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>word-spacing</h2>
+                <p>Sets the spacing between words. <br>
+                    Any length value like 10px, 5em, 3rem</p>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            css: 
+                            word-spacing: 10px; 
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>line-height</h2>
+                <p>Specifies the space between lines of text. <br>
+                    Numbers (like 1.5), percentages (150%), or lengths (20px)</p>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            css: 
+                            line-height: 1.5; 
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>color</h2>
+                <p>Specifies the color of text. <br>
+                Values: Named colors (red, blue), hex codes (#000), or RGB (rgb(0,0,255))</p>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            css: 
+                            color: blue; 
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Example with HTML</h2>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;head&gt;<br>
+                                &lt;style&gt;<br>
+                                    h1 {<br>
+                                        text-align: center;<br>
+                                        text-decoration: underline;<br>
+                                    }<br>
+                                    p {<br>
+                                        text-indent: 20px;<br>
+                                        line-height: 1.6;<br>
+                                        color: gray;<br>
+                                    }<br>
+                                &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                                &lt;h1&gt;CSS Text Properties&lt;/h1&gt;<br>
+                                &lt;p&gt;This is an example demonstrating text properties in CSS.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="btn">
+                    <button class="prev-button"><a href="./font.html">&lt; prev</a></button>
+                    <button class="next-button"><a href="./units.html">next &gt;</a></button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

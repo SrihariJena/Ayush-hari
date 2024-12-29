@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units in CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../images/logo1.png" alt="AGSP Logo">
+                <div class="text-content">
+                    <span class="text-1">AGSP</span>
+                    <span class="text-2">COMPUTER CENTER</span>
+                </div>
+            </div>
+            <div class="center-part">
+                <ul>
+                    <li><a href="../landing-page/index.html">Home</a></li>
+                    <li><a href="./index.html" style="color: rgb(182, 113, 113);">E-library</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="lef-part">
+                <div>Log-In</div>
+                <div>Sign-Up</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>CSS Tutorial</h2>
+            <ul>
+                <li><a href="./index.html">CSS Introduction</a></li>
+                <li><a href="./selector.html">CSS Selectors</a></li>
+                <li><a href="./aboutcss.html">CSS in Html</a></li>
+                <li><a href="./color.html">CSS Colors</a></li>
+                <li><a href="./background.html">CSS Background</a></li>
+                <li><a href="./font.html">CSS Fonts</a></li>
+                <li><a href="./text.html">CSS Text</a></li>
+                <li style="background-color: lightgreen;"><a href="./units.html">CSS Units</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+                <li><a href="./">CSS Styles</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <section>
+                <h2>Absolute Units</h2>
+                <p>Fixed-size units, unaffected by parent or screen size.</p>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            css: <br>
+                            div { <br>
+                                width: 200px; <br>
+                                height: 2in; <br>
+                                padding: 5mm; <br>
+                            } <br>
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Relative Units</h2>
+                <p>Flexible units, depending on the parent element or viewport.</p>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            css: <br>
+                            div { <br>
+                                width: 50%; <br>
+                                font-size: 1.2em; <br>
+                                margin: 5vw; <br>
+                            } <br>
+                        </code>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Relative Units: %, rem, em</h2>
+                <p>These units are flexible and adjust based on the parent element or root element.</p>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            css: <br>
+                            /* Percentage Example */ <br>
+                            div { <br>
+                                width: 50%; /* 50% of its parent's width */ <br>
+                                height: 100%; /* 100% of its parent's height */ <br>
+                            } <br>
+                            
+                            /* rem Example */ <br>
+                            body { <br>
+                                font-size: 16px; /* Base font size */ <br>
+                            } <br>
+                            h1 { <br>
+                                font-size: 2rem; /* 2 x 16px = 32px */ <br>
+                            } <br>
+                            p { <br>
+                                font-size: 1rem; /* Equal to 16px */ <br>
+                            } <br>
+
+                            /* em Example */ <br>
+                            .container { <br>
+                                font-size: 20px; /* Base font size for this container */ <br>
+                            } <br>
+                            .container h2 { <br>
+                                font-size: 1.5em; /* 1.5 x 20px = 30px */ <br>
+                            } <br>
+                            .container p { <br>
+                                font-size: 0.8em; /* 0.8 x 20px = 16px */ <br>
+                            } <br>
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <h2>Time Units</h2>
+                <p>Used in animations or transitions.</p>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            css: <br>
+                            button { <br>
+                                transition: all 0.3s; <br>
+                            } <br>
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Angle Units</h2>
+                <p>Used for rotations or gradients.</p>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            css: <br>
+                            div { <br>
+                                transform: rotate(45deg); <br>
+                            } <br>
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Example with HTML</h2>
+                <div class="example-box">
+                    <div class="code-snippet">
+                        <code>
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html&gt; <br>
+                            &lt;head&gt; <br>
+                            &lt;style&gt; <br>
+                                .box { <br>
+                                    width: 80%; <br>
+                                    height: 200px; <br>
+                                    margin: 5vw; <br>
+                                    font-size: 1.5em; <br>
+                                    transform: rotate(45deg); <br>
+                                    transition: all 0.5s; <br>
+                                } <br>
+                            &lt;/style&gt; <br>
+                            &lt;/head&gt; <br>
+                            &lt;body&gt; <br>
+                                &lt;div class="box"&gt;CSS Units Example&lt;/div&gt; <br>
+                            &lt;/body&gt; <br>
+                            &lt;/html&gt; <br>
+                        </code>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="btn">
+                    <button class="prev-button"><a href="./font.html"> &lt; prev </a> </button>
+                    <button class="next-button"><a href="./text.html">Next ></a></button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
